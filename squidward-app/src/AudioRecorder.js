@@ -7,6 +7,7 @@ import angryImage from './angry.png';
 
 const AudioRecorder = () => {
   const [isRecording, setIsRecording] = useState(false);
+  //THIS IS THE VARIABLE FOR TRANSCRIPT DATA
   const [transcript, setTranscript] = useState('');
   const [imageSrc, setImageSrc] = useState(neutralImage);
   const mediaRecorderRef = useRef(null);
@@ -65,6 +66,7 @@ const AudioRecorder = () => {
     setIsRecording(false);
   };
 
+  //IMAGE OUTCOME HERE
   const decideImage = () => {
     const random = Math.random();
     if (random < 0.5) {
